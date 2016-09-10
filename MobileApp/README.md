@@ -21,9 +21,4 @@ test
 
 Hello!!!!!!
 John here
-<<<<<<< HEAD
-
-john added 2
-=======
->>>>>>> origin/master
 >>>>>>> origin/master
