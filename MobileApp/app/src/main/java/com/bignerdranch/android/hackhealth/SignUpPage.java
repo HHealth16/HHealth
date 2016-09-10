@@ -31,6 +31,7 @@ public class SignUpPage extends AppCompatActivity implements View.OnClickListene
 
     private DatabaseReference mDatabase;
 
+    private EditText mName;
     private EditText mEmail;
     private EditText mPassword;
 
@@ -43,8 +44,9 @@ public class SignUpPage extends AppCompatActivity implements View.OnClickListene
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup_page);
 
-        setTitle("The Neighborhood");
+        setTitle("Health Pal");
 
+        mName = (EditText) findViewById(R.id.etName);
         mEmail = (EditText) findViewById(R.id.etEmail);
         mPassword = (EditText) findViewById(R.id.etPassword);
         findViewById(R.id.signup_button).setOnClickListener(this);

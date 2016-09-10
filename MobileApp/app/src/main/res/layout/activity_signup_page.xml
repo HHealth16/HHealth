@@ -8,6 +8,11 @@
     android:gravity="center_vertical"
     tools:context="com.bignerdranch.android.hackhealth.SignUpPage">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etName"
+        android:hint="Name"/>
 
 
     <EditText

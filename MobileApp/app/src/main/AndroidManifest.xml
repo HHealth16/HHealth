@@ -19,10 +19,7 @@
         </activity>
         <activity android:name=".LoginPage">
         </activity>
-        <activity
-            android:name=".UserMainActivity"
-            android:label="@string/title_activity_user_main"
-            android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".UserMainActivity">
         </activity>
     </application>
 
