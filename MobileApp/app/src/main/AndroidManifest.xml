@@ -20,7 +20,8 @@
         <activity android:name=".UserMainActivity" />
         <activity android:name=".Mental_Emotional" />
         <activity android:name=".Social" />
-        <activity android:name=".Physical"></activity>
+        <activity android:name=".Physical" />
+        <activity android:name=".Daily_Log"></activity>
     </application>
 
 </manifest>
