@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bignerdranch.android.hackhealth.PhysicalPageActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/social_question"
+        android:id="@+id/socialText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <SeekBar
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/socialText"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true"
+        android:max="10"/>
+
+
+    <TextView
+        android:id="@+id/seekBarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="14dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/seekBarText"
+        android:layout_centerHorizontal="true">
+
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Media"
+            android:id="@+id/checkedTextView15"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Going Out With Friends"
+            android:id="@+id/checkedTextView16"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night Life"
+            android:id="@+id/checkedTextView17"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call A Loved One"
+            android:id="@+id/checkedTextView18"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Family Time"
+            android:id="@+id/checkedTextView19"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Collaborate"
+            android:id="@+id/checkedTextView20"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seek Help"
+            android:id="@+id/checkedTextView21"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text Messaging"
+            android:id="@+id/checkedTextView22"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Chatting"
+            android:id="@+id/checkedTextView23"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attend A Workshop"
+            android:id="@+id/checkedTextView24"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take A Class"
+            android:id="@+id/checkedTextView25"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spend Time With S/O"
+            android:id="@+id/checkedTextView26"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dating"
+            android:id="@+id/checkedTextView27"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom..."
+            android:id="@+id/checkedTextView28"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bignerdranch.android.hackhealth.PhysicalPageActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/physical_question"
+        android:id="@+id/physicalText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <SeekBar
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/physicalText"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true"
+        android:max="10"/>
+
+    <TextView
+        android:id="@+id/seekBarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="14dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/seekBarText"
+        android:layout_centerHorizontal="true">
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Working Out"
+            android:id="@+id/checkedTextView29"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Running"
+            android:id="@+id/checkedTextView30"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yoga"
+            android:id="@+id/checkedTextView31"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MMA"
+            android:id="@+id/checkedTextView32"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Football"
+            android:id="@+id/checkedTextView33"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soccer"
+            android:id="@+id/checkedTextView34"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basketball"
+            android:id="@+id/checkedTextView35"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tennis"
+            android:id="@+id/checkedTextView36"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fencing"
+            android:id="@+id/checkedTextView37"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bowling"
+            android:id="@+id/checkedTextView38"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stretching"
+            android:id="@+id/checkedTextView39"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home Excersize"
+            android:id="@+id/checkedTextView40"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weights"
+            android:id="@+id/checkedTextView41"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walking"
+            android:id="@+id/checkedTextView42"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom..."
+            android:id="@+id/checkedTextView43"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DONE"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

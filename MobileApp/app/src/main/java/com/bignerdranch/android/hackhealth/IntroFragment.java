@@ -26,7 +26,7 @@ public class IntroFragment extends Fragment {
         mGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent getStarted = new Intent(IntroFragment.this.getActivity(), SignUpPage.class);
+                Intent getStarted = new Intent(IntroFragment.this.getActivity(), LoginPage.class);
                 startActivity(getStarted);
             }
         });

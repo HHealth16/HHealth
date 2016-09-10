@@ -10,4 +10,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.bignerdranch.android.hackhealth.UserMainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/triangle2"
+        android:id="@+id/imageViewTriangle"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emotionalButton"
+        android:text="@string/emotional"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/physical"
+        android:id="@+id/physicalButton"
+        android:layout_marginBottom="61dp"
+        android:layout_alignBottom="@+id/imageViewTriangle"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/social"
+        android:id="@+id/socialButton"
+        android:layout_alignTop="@+id/physicalButton"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/welcomeMessage"
+        android:layout_above="@+id/physicalButton"
+        android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>

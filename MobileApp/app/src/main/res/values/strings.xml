@@ -3,4 +3,10 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_user_main">UserMainActivity</string>
     <string name="login_button">Log In</string>
+    <string name="emotional">Emotional</string>
+    <string name="social">Social</string>
+    <string name="physical">Physical</string>
+    <string name="physical_question">On a scale of 1-10, how would you rate your physical activity?</string>
+    <string name="emotional_question">On a scale of 1-10, how would you rate your emotional stability?</string>
+    <string name="social_question">On a scale of 1-10, how owuld you rate your social life?</string>
 </resources>

@@ -21,6 +21,12 @@
         </activity>
         <activity android:name=".UserMainActivity">
         </activity>
+        <activity android:name=".PhysicalPageActivity">
+        </activity>
+        <activity android:name=".EmotionalPageActivity">
+        </activity>
+        <activity android:name=".SocialPageActivity">
+        </activity>
     </application>
 
 </manifest>

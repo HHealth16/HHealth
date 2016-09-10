@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -34,6 +36,9 @@ public class SignUpPage extends AppCompatActivity implements View.OnClickListene
     private EditText mName;
     private EditText mEmail;
     private EditText mPassword;
+    private EditText mAge;
+    private CheckBox mMale;
+    private CheckBox mFemale;
 
 
 
@@ -49,7 +54,25 @@ public class SignUpPage extends AppCompatActivity implements View.OnClickListene
         mName = (EditText) findViewById(R.id.etName);
         mEmail = (EditText) findViewById(R.id.etEmail);
         mPassword = (EditText) findViewById(R.id.etPassword);
+        mAge = (EditText) findViewById(R.id.etAge);
+        mMale = (CheckBox) findViewById(R.id.checkBoxMale);
+        mFemale = (CheckBox) findViewById(R.id.checkBoxFemale);
         findViewById(R.id.signup_button).setOnClickListener(this);
+
+        mMale.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                mFemale.setChecked(false);
+                mMale.setChecked(b);
+            }
+        });
+        mFemale.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                mMale.setChecked(false);
+                mFemale.setChecked(b);
+            }
+        });
 
         // [START initialize_auth]
         mAuth = FirebaseAuth.getInstance();
@@ -99,6 +122,8 @@ public class SignUpPage extends AppCompatActivity implements View.OnClickListene
         }
 
 
+
+
         // [START create_user_with_email]
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -126,16 +151,17 @@ public class SignUpPage extends AppCompatActivity implements View.OnClickListene
     private void onAuthSuccess(FirebaseUser user) {
 
         // Write new user
-        writeNewUser(user.getUid(), user.getEmail());
+        writeNewUser(user.getUid(), user.getEmail(), mName.getText().toString(), mAge.getText().toString());
 
         // Go to MainActivity
         startActivity(new Intent(SignUpPage.this, UserMainActivity.class));
         finish();
     }
+    
 
 
-    private void writeNewUser(String userId, String email) {
-        User user = new User(email);
+    private void writeNewUser(String userId, String email, String name, String age) {
+        User user = new User(email, name, age);
 
         mDatabase.child("users").child(userId).setValue(user);
 
