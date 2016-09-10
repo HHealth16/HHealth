@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bignerdranch.android.hackhealth.PhysicalPageActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/emotional_question"
+        android:id="@+id/emotionalText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <SeekBar
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/emotionalText"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true"
+        android:max="10"/>
+
+
+    <TextView
+        android:id="@+id/seekBarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBar"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="14dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/seekBarText"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Reading"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView2"
+            android:layout_below="@+id/checkedTextView2"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Journaling"
+           />
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView3"
+            android:layout_below="@+id/checkedTextView3"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Watching TV"
+           />
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView4"
+            android:layout_below="@+id/checkedTextView4"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Watching Movies"
+            />
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView5"
+            android:layout_below="@+id/checkedTextView5"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Drawing"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView6"
+            android:layout_below="@+id/checkedTextView6"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Crafts"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView7"
+            android:layout_below="@+id/checkedTextView7"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="DIY"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView8"
+            android:layout_below="@+id/checkedTextView8"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Cooking"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView9"
+            android:layout_below="@+id/checkedTextView9"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Baking"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView10"
+            android:layout_below="@+id/checkedTextView10"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Cleaning"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView11"
+            android:layout_below="@+id/checkedTextView11"
+            android:layout_alignParentLeft="true"
+            android:checked="true"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Meditation"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView12"
+            android:layout_below="@+id/checkedTextView12"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Prayer"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/checkedTextView13"
+            android:layout_below="@+id/checkedTextView13"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Spa/Hygiene"/>
+
+        <CheckedTextView
+            android:id="@+id/checkedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:checked="false"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="Custom..."/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="DONE"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

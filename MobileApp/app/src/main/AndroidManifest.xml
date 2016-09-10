@@ -15,12 +15,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name=".SignUpPage" />
         <activity android:name=".LoginPage" />
         <activity android:name=".UserMainActivity" />
         <activity android:name=".Mental_Emotional" />
         <activity android:name=".Social" />
         <activity android:name=".Physical"></activity>
+=======
+        <activity android:name=".SignUpPage">
+        </activity>
+        <activity android:name=".LoginPage">
+        </activity>
+        <activity android:name=".UserMainActivity">
+        </activity>
+        <activity android:name=".PhysicalPageActivity">
+        </activity>
+        <activity android:name=".EmotionalPageActivity">
+        </activity>
+        <activity android:name=".SocialPageActivity">
+        </activity>
+>>>>>>> cookie
     </application>
 
 </manifest>
