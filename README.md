@@ -23,7 +23,11 @@ Hello!!!!!!
 John here
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 john added 2
 =======
 >>>>>>> origin/master
 >>>>>>> origin/master
+=======
+john added 2 ------
+>>>>>>> refs/remotes/origin/John
