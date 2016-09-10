@@ -8,9 +8,20 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpPage">
+        </activity>
+        <activity android:name=".LoginPage">
+        </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
+            android:name=".UserMainActivity"
+            android:label="@string/title_activity_user_main"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>

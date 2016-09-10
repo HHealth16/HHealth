@@ -28,4 +28,4 @@ public class IntroAdapter extends FragmentPagerAdapter {
     }
 }
 
-}
+
